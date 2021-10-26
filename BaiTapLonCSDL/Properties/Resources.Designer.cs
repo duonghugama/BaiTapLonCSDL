@@ -59,5 +59,15 @@ namespace BaiTapLonCSDL.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_Thuy_Loi {
+            get {
+                object obj = ResourceManager.GetObject("Logo-Thuy_Loi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
