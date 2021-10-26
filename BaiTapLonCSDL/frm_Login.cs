@@ -10,12 +10,21 @@ using System.Windows.Forms;
 
 namespace BaiTapLonCSDL
 {
-    public partial class Form1 : Form
+    public partial class frm_Login : Form
     {
-        public Form1()
+        public frm_Login()
         {
             InitializeComponent();
         }
 
+        private void btn_Login_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
