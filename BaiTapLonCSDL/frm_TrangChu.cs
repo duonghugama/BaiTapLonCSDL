@@ -26,5 +26,15 @@ namespace BaiTapLonCSDL
         {
 
         }
+
+        private void quanLySachToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quanLyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
