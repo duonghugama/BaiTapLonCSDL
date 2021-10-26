@@ -29,29 +29,21 @@ namespace BaiTapLonCSDL
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quanLyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mươnSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.traSachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbi_ThongTinTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbi_DangXuat = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbi_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.quanLyToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.quanLySachToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quanLyĐôcGiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quanLyNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quanLyĐôcGiaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.mbi_Muon = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbi_Tra = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbi_QuanLyNhanVien = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbi_QuanLyDocGia = new System.Windows.Forms.ToolStripMenuItem();
+            this.mbi_QuanLySach = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ImageLocation = "https://upload.wikimedia.org/wikipedia/vi/b/bc/Logo-Thuy_Loi.png";
-            this.pictureBox1.Location = new System.Drawing.Point(12, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -67,72 +59,96 @@ namespace BaiTapLonCSDL
             // quanLyToolStripMenuItem
             // 
             this.quanLyToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mươnSachToolStripMenuItem,
-            this.traSachToolStripMenuItem});
+            this.mbi_ThongTinTaiKhoan,
+            this.mbi_DangXuat,
+            this.mbi_Exit});
             this.quanLyToolStripMenuItem.Name = "quanLyToolStripMenuItem";
-            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.quanLyToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.quanLyToolStripMenuItem.Text = "Tài khoản";
-            this.quanLyToolStripMenuItem.Click += new System.EventHandler(this.quanLyToolStripMenuItem_Click);
             // 
-            // mươnSachToolStripMenuItem
+            // mbi_ThongTinTaiKhoan
             // 
-            this.mươnSachToolStripMenuItem.Name = "mươnSachToolStripMenuItem";
-            this.mươnSachToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mươnSachToolStripMenuItem.Text = "Đổi mật khẩu";
+            this.mbi_ThongTinTaiKhoan.Name = "mbi_ThongTinTaiKhoan";
+            this.mbi_ThongTinTaiKhoan.Size = new System.Drawing.Size(177, 22);
+            this.mbi_ThongTinTaiKhoan.Text = "Thông tin tài khoản";
+            this.mbi_ThongTinTaiKhoan.Click += new System.EventHandler(this.mbi_ThongTinTaiKhoan_Click);
             // 
-            // traSachToolStripMenuItem
+            // mbi_DangXuat
             // 
-            this.traSachToolStripMenuItem.Name = "traSachToolStripMenuItem";
-            this.traSachToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.traSachToolStripMenuItem.Text = "Đăng xuất";
+            this.mbi_DangXuat.Name = "mbi_DangXuat";
+            this.mbi_DangXuat.Size = new System.Drawing.Size(177, 22);
+            this.mbi_DangXuat.Text = "Đăng xuất";
+            this.mbi_DangXuat.Click += new System.EventHandler(this.mbi_DangXuat_Click);
+            // 
+            // mbi_Exit
+            // 
+            this.mbi_Exit.Name = "mbi_Exit";
+            this.mbi_Exit.Size = new System.Drawing.Size(177, 22);
+            this.mbi_Exit.Text = "Thoát";
+            this.mbi_Exit.Click += new System.EventHandler(this.mbi_Exit_Click);
             // 
             // quanLyToolStripMenuItem1
             // 
             this.quanLyToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.quanLySachToolStripMenuItem,
-            this.quanLyĐôcGiaToolStripMenuItem,
-            this.quanLyNhânViênToolStripMenuItem,
-            this.quanLyĐôcGiaToolStripMenuItem1});
+            this.mbi_Muon,
+            this.mbi_Tra,
+            this.mbi_QuanLyNhanVien,
+            this.mbi_QuanLyDocGia,
+            this.mbi_QuanLySach});
             this.quanLyToolStripMenuItem1.Name = "quanLyToolStripMenuItem1";
             this.quanLyToolStripMenuItem1.Size = new System.Drawing.Size(60, 20);
             this.quanLyToolStripMenuItem1.Text = "Quản lý";
             // 
-            // quanLySachToolStripMenuItem
+            // mbi_Muon
             // 
-            this.quanLySachToolStripMenuItem.Name = "quanLySachToolStripMenuItem";
-            this.quanLySachToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.quanLySachToolStripMenuItem.Text = "Mượn ";
-            this.quanLySachToolStripMenuItem.Click += new System.EventHandler(this.quanLySachToolStripMenuItem_Click);
+            this.mbi_Muon.Name = "mbi_Muon";
+            this.mbi_Muon.Size = new System.Drawing.Size(180, 22);
+            this.mbi_Muon.Text = "Mượn ";
+            this.mbi_Muon.Click += new System.EventHandler(this.mbi_Muon_Click);
             // 
-            // quanLyĐôcGiaToolStripMenuItem
+            // mbi_Tra
             // 
-            this.quanLyĐôcGiaToolStripMenuItem.Name = "quanLyĐôcGiaToolStripMenuItem";
-            this.quanLyĐôcGiaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.quanLyĐôcGiaToolStripMenuItem.Text = "Trả";
+            this.mbi_Tra.Name = "mbi_Tra";
+            this.mbi_Tra.Size = new System.Drawing.Size(180, 22);
+            this.mbi_Tra.Text = "Trả";
+            this.mbi_Tra.Click += new System.EventHandler(this.mbi_Tra_Click);
             // 
-            // quanLyNhânViênToolStripMenuItem
+            // mbi_QuanLyNhanVien
             // 
-            this.quanLyNhânViênToolStripMenuItem.Name = "quanLyNhânViênToolStripMenuItem";
-            this.quanLyNhânViênToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.quanLyNhânViênToolStripMenuItem.Text = "Quản lý nhân viên";
+            this.mbi_QuanLyNhanVien.Name = "mbi_QuanLyNhanVien";
+            this.mbi_QuanLyNhanVien.Size = new System.Drawing.Size(180, 22);
+            this.mbi_QuanLyNhanVien.Text = "Quản lý nhân viên";
+            this.mbi_QuanLyNhanVien.Click += new System.EventHandler(this.mbi_QuanLyNhanVien_Click);
             // 
-            // quanLyĐôcGiaToolStripMenuItem1
+            // mbi_QuanLyDocGia
             // 
-            this.quanLyĐôcGiaToolStripMenuItem1.Name = "quanLyĐôcGiaToolStripMenuItem1";
-            this.quanLyĐôcGiaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.quanLyĐôcGiaToolStripMenuItem1.Text = "Quản lý độc giả";
+            this.mbi_QuanLyDocGia.Name = "mbi_QuanLyDocGia";
+            this.mbi_QuanLyDocGia.Size = new System.Drawing.Size(180, 22);
+            this.mbi_QuanLyDocGia.Text = "Quản lý độc giả";
+            this.mbi_QuanLyDocGia.Click += new System.EventHandler(this.mbi_QuanLyDocGia_Click);
+            // 
+            // mbi_QuanLySach
+            // 
+            this.mbi_QuanLySach.Name = "mbi_QuanLySach";
+            this.mbi_QuanLySach.Size = new System.Drawing.Size(180, 22);
+            this.mbi_QuanLySach.Text = "Quản lý sách";
+            this.mbi_QuanLySach.Click += new System.EventHandler(this.mbi_QuanLySach_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // frm_TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 530);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_TrangChu";
             this.Text = "Trang Chủ";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.frm_TrangChu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -141,15 +157,17 @@ namespace BaiTapLonCSDL
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem quanLyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mươnSachToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem traSachToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mbi_ThongTinTaiKhoan;
+        private System.Windows.Forms.ToolStripMenuItem mbi_DangXuat;
         private System.Windows.Forms.ToolStripMenuItem quanLyToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem quanLySachToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quanLyĐôcGiaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quanLyNhânViênToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quanLyĐôcGiaToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem mbi_Muon;
+        private System.Windows.Forms.ToolStripMenuItem mbi_Tra;
+        private System.Windows.Forms.ToolStripMenuItem mbi_QuanLyNhanVien;
+        private System.Windows.Forms.ToolStripMenuItem mbi_QuanLyDocGia;
+        private System.Windows.Forms.ToolStripMenuItem mbi_Exit;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem mbi_QuanLySach;
     }
 }
