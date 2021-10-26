@@ -57,6 +57,7 @@ namespace BaiTapLonCSDL
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtUserName.Location = new System.Drawing.Point(130, 110);
             this.txtUserName.Name = "txtUserName";
+            this.txtUserName.PlaceholderText = "Tên đăng nhập";
             this.txtUserName.Size = new System.Drawing.Size(260, 29);
             this.txtUserName.TabIndex = 1;
             // 
@@ -67,6 +68,8 @@ namespace BaiTapLonCSDL
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtPassword.Location = new System.Drawing.Point(130, 167);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.PlaceholderText = "Mật khẩu";
             this.txtPassword.Size = new System.Drawing.Size(260, 29);
             this.txtPassword.TabIndex = 3;
             // 
