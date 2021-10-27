@@ -19,8 +19,10 @@ namespace BaiTapLonCSDL
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frm_TrangChu frm = new frm_TrangChu();
             frm.ShowDialog();
+            this.Close();
         }
 
         private void btn_Exit_Click(object sender, EventArgs e)
