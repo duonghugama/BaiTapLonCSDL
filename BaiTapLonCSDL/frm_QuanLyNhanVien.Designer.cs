@@ -44,7 +44,7 @@ namespace BaiTapLonCSDL
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnTim = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTim = new System.Windows.Forms.TextBox();
             this.dgvTaikhoan = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -137,21 +137,22 @@ namespace BaiTapLonCSDL
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(161, 48);
+            this.btnSua.Location = new System.Drawing.Point(152, 50);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(149, 52);
+            this.btnSua.Size = new System.Drawing.Size(136, 52);
             this.btnSua.TabIndex = 18;
             this.btnSua.Text = "Sửa ";
             this.btnSua.UseVisualStyleBackColor = true;
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(316, 52);
+            this.btnXoa.Location = new System.Drawing.Point(294, 51);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(130, 50);
             this.btnXoa.TabIndex = 17;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -171,17 +172,17 @@ namespace BaiTapLonCSDL
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtTim
             // 
-            this.textBox1.Location = new System.Drawing.Point(459, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 31);
-            this.textBox1.TabIndex = 19;
+            this.txtTim.Location = new System.Drawing.Point(459, 62);
+            this.txtTim.Name = "txtTim";
+            this.txtTim.Size = new System.Drawing.Size(188, 31);
+            this.txtTim.TabIndex = 19;
             // 
             // dgvTaikhoan
             // 
             this.dgvTaikhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTaikhoan.Location = new System.Drawing.Point(3, 3);
+            this.dgvTaikhoan.Location = new System.Drawing.Point(3, -1);
             this.dgvTaikhoan.Name = "dgvTaikhoan";
             this.dgvTaikhoan.RowHeadersWidth = 62;
             this.dgvTaikhoan.RowTemplate.Height = 33;
@@ -201,7 +202,7 @@ namespace BaiTapLonCSDL
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 453);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTim);
             this.Controls.Add(this.btnTim);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
@@ -236,7 +237,7 @@ namespace BaiTapLonCSDL
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnTim;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTim;
         private System.Windows.Forms.DataGridView dgvTaikhoan;
         private System.Windows.Forms.Panel panel1;
     }
