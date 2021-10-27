@@ -40,8 +40,10 @@ namespace BaiTapLonCSDL
             this.quảnLýSáchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -70,19 +72,19 @@ namespace BaiTapLonCSDL
             // mbi_ThongTinTaiKhoan
             // 
             this.mbi_ThongTinTaiKhoan.Name = "mbi_ThongTinTaiKhoan";
-            this.mbi_ThongTinTaiKhoan.Size = new System.Drawing.Size(270, 34);
+            this.mbi_ThongTinTaiKhoan.Size = new System.Drawing.Size(268, 34);
             this.mbi_ThongTinTaiKhoan.Text = "Thông tin tài khoản";
             // 
             // mbi_DangXuat
             // 
             this.mbi_DangXuat.Name = "mbi_DangXuat";
-            this.mbi_DangXuat.Size = new System.Drawing.Size(270, 34);
+            this.mbi_DangXuat.Size = new System.Drawing.Size(268, 34);
             this.mbi_DangXuat.Text = "Đăng xuất";
             // 
             // mbi_Exit
             // 
             this.mbi_Exit.Name = "mbi_Exit";
-            this.mbi_Exit.Size = new System.Drawing.Size(270, 34);
+            this.mbi_Exit.Size = new System.Drawing.Size(268, 34);
             this.mbi_Exit.Text = "Thoát";
             // 
             // quanLyToolStripMenuItem1
@@ -98,25 +100,25 @@ namespace BaiTapLonCSDL
             // mbi_Muon
             // 
             this.mbi_Muon.Name = "mbi_Muon";
-            this.mbi_Muon.Size = new System.Drawing.Size(270, 34);
+            this.mbi_Muon.Size = new System.Drawing.Size(215, 34);
             this.mbi_Muon.Text = "Mượn ";
             // 
             // mbi_Tra
             // 
             this.mbi_Tra.Name = "mbi_Tra";
-            this.mbi_Tra.Size = new System.Drawing.Size(270, 34);
+            this.mbi_Tra.Size = new System.Drawing.Size(215, 34);
             this.mbi_Tra.Text = "Trả";
             // 
             // quảnLýSáchToolStripMenuItem
             // 
             this.quảnLýSáchToolStripMenuItem.Name = "quảnLýSáchToolStripMenuItem";
-            this.quảnLýSáchToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.quảnLýSáchToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.quảnLýSáchToolStripMenuItem.Text = "Quản lý sách";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BaiTapLonCSDL.Properties.Resources.Logo_Thuy_Loi;
-            this.pictureBox1.Location = new System.Drawing.Point(144, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(286, 163);
             this.pictureBox1.TabIndex = 11;
@@ -126,25 +128,35 @@ namespace BaiTapLonCSDL
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(349, 89);
+            this.label1.Location = new System.Drawing.Point(228, 78);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(688, 68);
             this.label1.TabIndex = 12;
             this.label1.Text = "Thư viên Đại học Thủy Lợi";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(23, 51);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1071, 245);
+            this.panel1.TabIndex = 13;
             // 
             // frm_TaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 647);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "frm_TaiKhoan";
             this.Text = "frm_TaiKhoan";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,5 +175,6 @@ namespace BaiTapLonCSDL
         private System.Windows.Forms.ToolStripMenuItem quảnLýSáchToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

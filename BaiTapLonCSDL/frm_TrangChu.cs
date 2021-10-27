@@ -12,7 +12,6 @@ namespace BaiTapLonCSDL
 {
     public partial class frm_TrangChu : Form
     {
-        
         public frm_TrangChu()
         {
             InitializeComponent();
@@ -20,18 +19,9 @@ namespace BaiTapLonCSDL
 
         private void mbi_ThongTinTaiKhoan_Click(object sender, EventArgs e)
         {
-
-            if (this.MdiChildren.Count() == 0)
-            {
-                frm_TaiKhoan frm = new frm_TaiKhoan();
-                frm.MdiParent = this;
-                frm.WindowState = FormWindowState.Maximized;
-                frm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Hãy đóng form cũ đi để mở form mới");
-            }
+            frm_TaiKhoan frm = new frm_TaiKhoan();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void mbi_DangXuat_Click(object sender, EventArgs e)
@@ -46,81 +36,37 @@ namespace BaiTapLonCSDL
 
         private void mbi_Muon_Click(object sender, EventArgs e)
         {
-
-            if (this.MdiChildren.Count() == 0)
-            {
-                frm_Muon frm = new frm_Muon();
-                frm.MdiParent = this;
-                frm.WindowState = FormWindowState.Maximized;
-                frm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Hãy đóng form cũ đi để mở form mới");
-            }
+            frm_Muon frm = new frm_Muon();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void mbi_Tra_Click(object sender, EventArgs e)
         {
-
-            if (this.MdiChildren.Count() == 0)
-            {
-                frm_Tra frm = new frm_Tra();
-                frm.MdiParent = this;
-                frm.WindowState = FormWindowState.Maximized;
-                frm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Hãy đóng form cũ đi để mở form mới");
-            }
+            frm_Tra frm = new frm_Tra();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void mbi_QuanLyNhanVien_Click(object sender, EventArgs e)
         {
-
-            if (this.MdiChildren.Count() == 0)
-            {
-                frm_QuanLyNhanVien frm = new frm_QuanLyNhanVien();
-                frm.MdiParent = this;
-                frm.WindowState = FormWindowState.Maximized;
-                frm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Hãy đóng form cũ đi để mở form mới");
-            }
+            frm_QuanLyNhanVien frm = new frm_QuanLyNhanVien();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void mbi_QuanLyDocGia_Click(object sender, EventArgs e)
         {
-
-            if (this.MdiChildren.Count() == 0)
-            {
-                frm_QuanLyDocGia frm = new frm_QuanLyDocGia();
-                frm.MdiParent = this;
-                frm.WindowState = FormWindowState.Maximized;
-                frm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Hãy đóng form cũ đi để mở form mới");
-            }
+            frm_QuanLyDocGia frm = new frm_QuanLyDocGia();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void mbi_QuanLySach_Click(object sender, EventArgs e)
         {
-            if (this.MdiChildren.Count() == 0)
-            {
-                frm_QuanLySach frm = new frm_QuanLySach();
-                frm.MdiParent = this;
-                frm.WindowState = FormWindowState.Maximized;
-                frm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Hãy đóng form cũ đi để mở form mới");
-            }
+            frm_QuanLySach frm = new frm_QuanLySach();
+            frm.MdiParent = this;
+            frm.Show();
         }
 
         private void frm_TrangChu_Load(object sender, EventArgs e)
