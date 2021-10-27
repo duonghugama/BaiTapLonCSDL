@@ -43,7 +43,7 @@ namespace BaiTapLonCSDL
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnDoimk = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTaikhoan = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -80,19 +80,19 @@ namespace BaiTapLonCSDL
             // mbi_ThongTinTaiKhoan
             // 
             this.mbi_ThongTinTaiKhoan.Name = "mbi_ThongTinTaiKhoan";
-            this.mbi_ThongTinTaiKhoan.Size = new System.Drawing.Size(270, 34);
+            this.mbi_ThongTinTaiKhoan.Size = new System.Drawing.Size(268, 34);
             this.mbi_ThongTinTaiKhoan.Text = "Thông tin tài khoản";
             // 
             // mbi_DangXuat
             // 
             this.mbi_DangXuat.Name = "mbi_DangXuat";
-            this.mbi_DangXuat.Size = new System.Drawing.Size(270, 34);
+            this.mbi_DangXuat.Size = new System.Drawing.Size(268, 34);
             this.mbi_DangXuat.Text = "Đăng xuất";
             // 
             // mbi_Exit
             // 
             this.mbi_Exit.Name = "mbi_Exit";
-            this.mbi_Exit.Size = new System.Drawing.Size(270, 34);
+            this.mbi_Exit.Size = new System.Drawing.Size(268, 34);
             this.mbi_Exit.Text = "Thoát";
             // 
             // quanLyToolStripMenuItem1
@@ -108,19 +108,19 @@ namespace BaiTapLonCSDL
             // mbi_Muon
             // 
             this.mbi_Muon.Name = "mbi_Muon";
-            this.mbi_Muon.Size = new System.Drawing.Size(270, 34);
+            this.mbi_Muon.Size = new System.Drawing.Size(215, 34);
             this.mbi_Muon.Text = "Mượn ";
             // 
             // mbi_Tra
             // 
             this.mbi_Tra.Name = "mbi_Tra";
-            this.mbi_Tra.Size = new System.Drawing.Size(270, 34);
+            this.mbi_Tra.Size = new System.Drawing.Size(215, 34);
             this.mbi_Tra.Text = "Trả";
             // 
             // quảnLýSáchToolStripMenuItem
             // 
             this.quảnLýSáchToolStripMenuItem.Name = "quảnLýSáchToolStripMenuItem";
-            this.quảnLýSáchToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.quảnLýSáchToolStripMenuItem.Size = new System.Drawing.Size(215, 34);
             this.quảnLýSáchToolStripMenuItem.Text = "Quản lý sách";
             // 
             // pictureBox1
@@ -160,13 +160,13 @@ namespace BaiTapLonCSDL
             this.btnDoimk.Text = "Đổi mật khẩu";
             this.btnDoimk.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtTaikhoan
             // 
-            this.textBox1.Location = new System.Drawing.Point(355, 351);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(403, 31);
-            this.textBox1.TabIndex = 15;
+            this.txtTaikhoan.Location = new System.Drawing.Point(355, 351);
+            this.txtTaikhoan.Name = "txtTaikhoan";
+            this.txtTaikhoan.ReadOnly = true;
+            this.txtTaikhoan.Size = new System.Drawing.Size(403, 31);
+            this.txtTaikhoan.TabIndex = 15;
             // 
             // label2
             // 
@@ -219,7 +219,7 @@ namespace BaiTapLonCSDL
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTaikhoan);
             this.Controls.Add(this.btnDoimk);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -251,7 +251,7 @@ namespace BaiTapLonCSDL
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnDoimk;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTaikhoan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

@@ -65,5 +65,10 @@ namespace BaiTapLonCSDL
             else
                 return true;
         }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
