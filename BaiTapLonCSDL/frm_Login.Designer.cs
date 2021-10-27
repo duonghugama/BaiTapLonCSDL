@@ -29,6 +29,7 @@ namespace BaiTapLonCSDL
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Login));
             this.label1 = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -109,7 +110,8 @@ namespace BaiTapLonCSDL
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ImageLocation = "https://upload.wikimedia.org/wikipedia/vi/b/bc/Logo-Thuy_Loi.png";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.ImageLocation = "";
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 98);

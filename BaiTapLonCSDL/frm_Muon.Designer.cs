@@ -49,21 +49,19 @@ namespace BaiTapLonCSDL
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_TaoHoaDon = new System.Windows.Forms.Button();
             this.dtp_NgayMuon = new System.Windows.Forms.DateTimePicker();
-            this.txt_MaSach = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.txt_MaSV = new System.Windows.Forms.TextBox();
             this.txt_SoHoaDon = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btn_TaoHoaDon = new System.Windows.Forms.Button();
+            this.txt_MaSach = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.if_dtgMuonSach)).BeginInit();
@@ -282,15 +280,13 @@ namespace BaiTapLonCSDL
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.btn_TaoHoaDon);
-            this.panel1.Controls.Add(this.dtp_NgayMuon);
             this.panel1.Controls.Add(this.txt_MaSach);
-            this.panel1.Controls.Add(this.richTextBox1);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.dtp_NgayMuon);
             this.panel1.Controls.Add(this.txt_MaSV);
             this.panel1.Controls.Add(this.txt_SoHoaDon);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -298,17 +294,6 @@ namespace BaiTapLonCSDL
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(375, 437);
             this.panel1.TabIndex = 4;
-            // 
-            // btn_TaoHoaDon
-            // 
-            this.btn_TaoHoaDon.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_TaoHoaDon.Location = new System.Drawing.Point(101, 314);
-            this.btn_TaoHoaDon.Name = "btn_TaoHoaDon";
-            this.btn_TaoHoaDon.Size = new System.Drawing.Size(127, 48);
-            this.btn_TaoHoaDon.TabIndex = 19;
-            this.btn_TaoHoaDon.Text = "Tạo hóa đơn";
-            this.btn_TaoHoaDon.UseVisualStyleBackColor = true;
-            this.btn_TaoHoaDon.Click += new System.EventHandler(this.button1_Click);
             // 
             // dtp_NgayMuon
             // 
@@ -318,23 +303,6 @@ namespace BaiTapLonCSDL
             this.dtp_NgayMuon.Name = "dtp_NgayMuon";
             this.dtp_NgayMuon.Size = new System.Drawing.Size(127, 27);
             this.dtp_NgayMuon.TabIndex = 12;
-            // 
-            // txt_MaSach
-            // 
-            this.txt_MaSach.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_MaSach.Location = new System.Drawing.Point(101, 250);
-            this.txt_MaSach.Name = "txt_MaSach";
-            this.txt_MaSach.Size = new System.Drawing.Size(127, 27);
-            this.txt_MaSach.TabIndex = 11;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.richTextBox1.Location = new System.Drawing.Point(101, 172);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(255, 66);
-            this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = "";
             // 
             // txt_MaSV
             // 
@@ -374,28 +342,6 @@ namespace BaiTapLonCSDL
             this.label8.Size = new System.Drawing.Size(90, 20);
             this.label8.TabIndex = 4;
             this.label8.Text = "Ngày mượn:";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label7.Location = new System.Drawing.Point(3, 175);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 20);
-            this.label7.TabIndex = 3;
-            this.label7.Text = "Ghi chú:";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label6.Location = new System.Drawing.Point(3, 253);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 20);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Mã sách:";
             // 
             // label5
             // 
@@ -451,6 +397,35 @@ namespace BaiTapLonCSDL
             this.label2.TabIndex = 0;
             this.label2.Text = "Thông tin người mượn";
             // 
+            // btn_TaoHoaDon
+            // 
+            this.btn_TaoHoaDon.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btn_TaoHoaDon.Location = new System.Drawing.Point(101, 236);
+            this.btn_TaoHoaDon.Name = "btn_TaoHoaDon";
+            this.btn_TaoHoaDon.Size = new System.Drawing.Size(127, 48);
+            this.btn_TaoHoaDon.TabIndex = 22;
+            this.btn_TaoHoaDon.Text = "Tạo hóa đơn";
+            this.btn_TaoHoaDon.UseVisualStyleBackColor = true;
+            // 
+            // txt_MaSach
+            // 
+            this.txt_MaSach.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_MaSach.Location = new System.Drawing.Point(101, 172);
+            this.txt_MaSach.Name = "txt_MaSach";
+            this.txt_MaSach.Size = new System.Drawing.Size(127, 27);
+            this.txt_MaSach.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label6.Location = new System.Drawing.Point(3, 175);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 20);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Mã sách:";
+            // 
             // frm_Muon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -493,22 +468,20 @@ namespace BaiTapLonCSDL
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dtp_NgayMuon;
-        private System.Windows.Forms.TextBox txt_MaSach;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox txt_MaSV;
         private System.Windows.Forms.TextBox txt_SoHoaDon;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView if_dtgMuonSach;
-        private System.Windows.Forms.Button btn_TaoHoaDon;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtg_MaSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtg_TenSach;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtg_NhaXuatBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtg_NamXuatBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn dtg_GiaSach;
+        private System.Windows.Forms.Button btn_TaoHoaDon;
+        private System.Windows.Forms.TextBox txt_MaSach;
+        private System.Windows.Forms.Label label6;
     }
 }
