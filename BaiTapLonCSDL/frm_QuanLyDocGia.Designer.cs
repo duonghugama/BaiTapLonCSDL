@@ -44,12 +44,12 @@ namespace BaiTapLonCSDL
             this.grB_GioiTinh = new System.Windows.Forms.GroupBox();
             this.rbNu = new System.Windows.Forms.RadioButton();
             this.rbNam = new System.Windows.Forms.RadioButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgQuanLyDocGia = new System.Windows.Forms.DataGridView();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.grB_GioiTinh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgQuanLyDocGia)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -198,19 +198,19 @@ namespace BaiTapLonCSDL
             this.rbNam.Text = "Nam";
             this.rbNam.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dtgQuanLyDocGia
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dtgQuanLyDocGia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 212);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(988, 245);
-            this.dataGridView1.TabIndex = 15;
+            this.dtgQuanLyDocGia.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dtgQuanLyDocGia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgQuanLyDocGia.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dtgQuanLyDocGia.Location = new System.Drawing.Point(12, 212);
+            this.dtgQuanLyDocGia.Name = "dtgQuanLyDocGia";
+            this.dtgQuanLyDocGia.RowTemplate.Height = 25;
+            this.dtgQuanLyDocGia.Size = new System.Drawing.Size(988, 245);
+            this.dtgQuanLyDocGia.TabIndex = 15;
             // 
             // btnThem
             // 
@@ -250,7 +250,7 @@ namespace BaiTapLonCSDL
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgQuanLyDocGia);
             this.Controls.Add(this.grB_GioiTinh);
             this.Controls.Add(this.dtpNgaySinh);
             this.Controls.Add(this.txtGhiChu);
@@ -270,7 +270,7 @@ namespace BaiTapLonCSDL
             this.Text = "Quản Lý Độc Giả";
             this.grB_GioiTinh.ResumeLayout(false);
             this.grB_GioiTinh.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgQuanLyDocGia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,7 +293,7 @@ namespace BaiTapLonCSDL
         private System.Windows.Forms.GroupBox grB_GioiTinh;
         private System.Windows.Forms.RadioButton rbNu;
         private System.Windows.Forms.RadioButton rbNam;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgQuanLyDocGia;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
