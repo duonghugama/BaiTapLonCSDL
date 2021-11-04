@@ -30,6 +30,7 @@ namespace BaiTapLonCSDL
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnXem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -64,6 +65,7 @@ namespace BaiTapLonCSDL
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnXem);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnSua);
             this.panel1.Controls.Add(this.btnThem);
@@ -84,6 +86,16 @@ namespace BaiTapLonCSDL
             this.panel1.Size = new System.Drawing.Size(978, 252);
             this.panel1.TabIndex = 0;
             // 
+            // btnXem
+            // 
+            this.btnXem.Location = new System.Drawing.Point(806, 205);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(112, 34);
+            this.btnXem.TabIndex = 13;
+            this.btnXem.Text = "xem";
+            this.btnXem.UseVisualStyleBackColor = true;
+            this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
+            // 
             // btnXoa
             // 
             this.btnXoa.Location = new System.Drawing.Point(605, 205);
@@ -92,6 +104,7 @@ namespace BaiTapLonCSDL
             this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -101,6 +114,7 @@ namespace BaiTapLonCSDL
             this.btnSua.TabIndex = 12;
             this.btnSua.Text = "Sửa ";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -110,6 +124,7 @@ namespace BaiTapLonCSDL
             this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm ";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label6
             // 
@@ -217,6 +232,7 @@ namespace BaiTapLonCSDL
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(978, 316);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // menuStrip1
             // 
@@ -311,6 +327,7 @@ namespace BaiTapLonCSDL
             this.Controls.Add(this.panel1);
             this.Name = "frm_QuanLySach";
             this.Text = "frm_QuanLySach";
+            this.Load += new System.EventHandler(this.frm_QuanLySach_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -351,5 +368,6 @@ namespace BaiTapLonCSDL
         private System.Windows.Forms.ToolStripMenuItem mbi_QuanLyNhanVien;
         private System.Windows.Forms.ToolStripMenuItem mbi_QuanLyDocGia;
         private System.Windows.Forms.ToolStripMenuItem mbi_QuanLySach;
+        private System.Windows.Forms.Button btnXem;
     }
 }
