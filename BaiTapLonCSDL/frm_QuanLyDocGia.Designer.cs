@@ -221,6 +221,7 @@ namespace BaiTapLonCSDL
             this.btnThem.TabIndex = 16;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnXoa
             // 
@@ -268,6 +269,7 @@ namespace BaiTapLonCSDL
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_QuanLyDocGia";
             this.Text = "Quản Lý Độc Giả";
+            this.Load += new System.EventHandler(this.frm_QuanLyDocGia_Load);
             this.grB_GioiTinh.ResumeLayout(false);
             this.grB_GioiTinh.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgQuanLyDocGia)).EndInit();

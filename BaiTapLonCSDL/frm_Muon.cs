@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -50,6 +51,28 @@ namespace BaiTapLonCSDL
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frm_Muon_Load(object sender, EventArgs e)
+        {
+            if_dtgMuonSach.DataSource = getMuon().Tables[0];
+            if_dtgMuonSach.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            if_dtgMuonSach.Enabled = false;
+
+            DataSet getMuon()
+            {
+                DataSet data = new DataSet();
+                string query = "select * from Muon";
+                using (SqlConnection conn = new SqlConnection(ConnectionString.con))
+                {
+                    conn.Open();
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                    conn.Close();
+                    adapter.Fill(data);
+
+                }
+                return data;
+            }
         }
     }
 }

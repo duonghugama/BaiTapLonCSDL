@@ -32,11 +32,6 @@ namespace BaiTapLonCSDL
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.if_dtgMuonSach = new System.Windows.Forms.DataGridView();
-            this.dtg_MaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtg_TenSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtg_NhaXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtg_NamXuatBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dtg_GiaSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.if_grB_GioiTinh = new System.Windows.Forms.GroupBox();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -49,6 +44,9 @@ namespace BaiTapLonCSDL
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_TaoHoaDon = new System.Windows.Forms.Button();
+            this.txt_MaSach = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.dtp_NgayMuon = new System.Windows.Forms.DateTimePicker();
             this.txt_MaSV = new System.Windows.Forms.TextBox();
             this.txt_SoHoaDon = new System.Windows.Forms.TextBox();
@@ -59,9 +57,6 @@ namespace BaiTapLonCSDL
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.btn_TaoHoaDon = new System.Windows.Forms.Button();
-            this.txt_MaSach = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.if_dtgMuonSach)).BeginInit();
@@ -107,9 +102,9 @@ namespace BaiTapLonCSDL
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel3.Location = new System.Drawing.Point(384, 3);
+            this.panel3.Location = new System.Drawing.Point(383, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(591, 439);
+            this.panel3.Size = new System.Drawing.Size(592, 439);
             this.panel3.TabIndex = 5;
             // 
             // if_dtgMuonSach
@@ -119,56 +114,19 @@ namespace BaiTapLonCSDL
             | System.Windows.Forms.AnchorStyles.Right)));
             this.if_dtgMuonSach.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.if_dtgMuonSach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.if_dtgMuonSach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dtg_MaSach,
-            this.dtg_TenSach,
-            this.dtg_NhaXuatBan,
-            this.dtg_NamXuatBan,
-            this.dtg_GiaSach});
             this.if_dtgMuonSach.Enabled = false;
             this.if_dtgMuonSach.Location = new System.Drawing.Point(3, 157);
             this.if_dtgMuonSach.Name = "if_dtgMuonSach";
             this.if_dtgMuonSach.RowTemplate.Height = 25;
-            this.if_dtgMuonSach.Size = new System.Drawing.Size(588, 282);
+            this.if_dtgMuonSach.Size = new System.Drawing.Size(589, 282);
             this.if_dtgMuonSach.TabIndex = 18;
-            // 
-            // dtg_MaSach
-            // 
-            this.dtg_MaSach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtg_MaSach.HeaderText = "Mã sách";
-            this.dtg_MaSach.Name = "dtg_MaSach";
-            this.dtg_MaSach.ReadOnly = true;
-            // 
-            // dtg_TenSach
-            // 
-            this.dtg_TenSach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtg_TenSach.HeaderText = "Tên sách";
-            this.dtg_TenSach.Name = "dtg_TenSach";
-            // 
-            // dtg_NhaXuatBan
-            // 
-            this.dtg_NhaXuatBan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtg_NhaXuatBan.HeaderText = "Nhà xuất bản";
-            this.dtg_NhaXuatBan.Name = "dtg_NhaXuatBan";
-            // 
-            // dtg_NamXuatBan
-            // 
-            this.dtg_NamXuatBan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtg_NamXuatBan.HeaderText = "Năm xuất bản";
-            this.dtg_NamXuatBan.Name = "dtg_NamXuatBan";
-            // 
-            // dtg_GiaSach
-            // 
-            this.dtg_GiaSach.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dtg_GiaSach.HeaderText = "Giá sách";
-            this.dtg_GiaSach.Name = "dtg_GiaSach";
             // 
             // if_grB_GioiTinh
             // 
             this.if_grB_GioiTinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.if_grB_GioiTinh.Controls.Add(this.radioButton2);
             this.if_grB_GioiTinh.Controls.Add(this.radioButton1);
-            this.if_grB_GioiTinh.Location = new System.Drawing.Point(456, 86);
+            this.if_grB_GioiTinh.Location = new System.Drawing.Point(457, 86);
             this.if_grB_GioiTinh.Name = "if_grB_GioiTinh";
             this.if_grB_GioiTinh.Size = new System.Drawing.Size(120, 63);
             this.if_grB_GioiTinh.TabIndex = 17;
@@ -199,7 +157,7 @@ namespace BaiTapLonCSDL
             this.if_dtpNgaySinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.if_dtpNgaySinh.Enabled = false;
             this.if_dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.if_dtpNgaySinh.Location = new System.Drawing.Point(134, 107);
+            this.if_dtpNgaySinh.Location = new System.Drawing.Point(135, 107);
             this.if_dtpNgaySinh.Name = "if_dtpNgaySinh";
             this.if_dtpNgaySinh.Size = new System.Drawing.Size(127, 27);
             this.if_dtpNgaySinh.TabIndex = 13;
@@ -208,7 +166,7 @@ namespace BaiTapLonCSDL
             // 
             this.if_txtMaSV.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.if_txtMaSV.Enabled = false;
-            this.if_txtMaSV.Location = new System.Drawing.Point(134, 42);
+            this.if_txtMaSV.Location = new System.Drawing.Point(135, 42);
             this.if_txtMaSV.Name = "if_txtMaSV";
             this.if_txtMaSV.Size = new System.Drawing.Size(127, 27);
             this.if_txtMaSV.TabIndex = 12;
@@ -217,7 +175,7 @@ namespace BaiTapLonCSDL
             // 
             this.if_txtTenNguoiMuon.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.if_txtTenNguoiMuon.Enabled = false;
-            this.if_txtTenNguoiMuon.Location = new System.Drawing.Point(456, 41);
+            this.if_txtTenNguoiMuon.Location = new System.Drawing.Point(457, 41);
             this.if_txtTenNguoiMuon.Name = "if_txtTenNguoiMuon";
             this.if_txtTenNguoiMuon.Size = new System.Drawing.Size(127, 27);
             this.if_txtTenNguoiMuon.TabIndex = 11;
@@ -227,7 +185,7 @@ namespace BaiTapLonCSDL
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label12.Location = new System.Drawing.Point(325, 112);
+            this.label12.Location = new System.Drawing.Point(326, 112);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(68, 20);
             this.label12.TabIndex = 5;
@@ -238,7 +196,7 @@ namespace BaiTapLonCSDL
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label10.Location = new System.Drawing.Point(3, 45);
+            this.label10.Location = new System.Drawing.Point(4, 45);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 20);
             this.label10.TabIndex = 3;
@@ -249,7 +207,7 @@ namespace BaiTapLonCSDL
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label3.Location = new System.Drawing.Point(325, 45);
+            this.label3.Location = new System.Drawing.Point(326, 45);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(125, 20);
             this.label3.TabIndex = 2;
@@ -260,7 +218,7 @@ namespace BaiTapLonCSDL
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label1.Location = new System.Drawing.Point(3, 112);
+            this.label1.Location = new System.Drawing.Point(4, 112);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 20);
             this.label1.TabIndex = 1;
@@ -292,8 +250,37 @@ namespace BaiTapLonCSDL
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(375, 437);
+            this.panel1.Size = new System.Drawing.Size(374, 437);
             this.panel1.TabIndex = 4;
+            // 
+            // btn_TaoHoaDon
+            // 
+            this.btn_TaoHoaDon.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btn_TaoHoaDon.Location = new System.Drawing.Point(101, 236);
+            this.btn_TaoHoaDon.Name = "btn_TaoHoaDon";
+            this.btn_TaoHoaDon.Size = new System.Drawing.Size(127, 48);
+            this.btn_TaoHoaDon.TabIndex = 22;
+            this.btn_TaoHoaDon.Text = "Tạo hóa đơn";
+            this.btn_TaoHoaDon.UseVisualStyleBackColor = true;
+            // 
+            // txt_MaSach
+            // 
+            this.txt_MaSach.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txt_MaSach.Location = new System.Drawing.Point(101, 172);
+            this.txt_MaSach.Name = "txt_MaSach";
+            this.txt_MaSach.Size = new System.Drawing.Size(127, 27);
+            this.txt_MaSach.TabIndex = 21;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label6.Location = new System.Drawing.Point(3, 175);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(66, 20);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Mã sách:";
             // 
             // dtp_NgayMuon
             // 
@@ -397,35 +384,6 @@ namespace BaiTapLonCSDL
             this.label2.TabIndex = 0;
             this.label2.Text = "Thông tin người mượn";
             // 
-            // btn_TaoHoaDon
-            // 
-            this.btn_TaoHoaDon.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btn_TaoHoaDon.Location = new System.Drawing.Point(101, 236);
-            this.btn_TaoHoaDon.Name = "btn_TaoHoaDon";
-            this.btn_TaoHoaDon.Size = new System.Drawing.Size(127, 48);
-            this.btn_TaoHoaDon.TabIndex = 22;
-            this.btn_TaoHoaDon.Text = "Tạo hóa đơn";
-            this.btn_TaoHoaDon.UseVisualStyleBackColor = true;
-            // 
-            // txt_MaSach
-            // 
-            this.txt_MaSach.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txt_MaSach.Location = new System.Drawing.Point(101, 172);
-            this.txt_MaSach.Name = "txt_MaSach";
-            this.txt_MaSach.Size = new System.Drawing.Size(127, 27);
-            this.txt_MaSach.TabIndex = 21;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label6.Location = new System.Drawing.Point(3, 175);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 20);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Mã sách:";
-            // 
             // frm_Muon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -434,6 +392,7 @@ namespace BaiTapLonCSDL
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frm_Muon";
             this.Text = "Mượn sách";
+            this.Load += new System.EventHandler(this.frm_Muon_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -475,11 +434,6 @@ namespace BaiTapLonCSDL
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView if_dtgMuonSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtg_MaSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtg_TenSach;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtg_NhaXuatBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtg_NamXuatBan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dtg_GiaSach;
         private System.Windows.Forms.Button btn_TaoHoaDon;
         private System.Windows.Forms.TextBox txt_MaSach;
         private System.Windows.Forms.Label label6;
