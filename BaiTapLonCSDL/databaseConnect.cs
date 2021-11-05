@@ -8,6 +8,6 @@ namespace BaiTapLonCSDL
 {
     public class ConnectionString
     {
-        public static string con = @"Data Source=DESKTOP-KMNS09Q\SQLEXPRESS;Initial Catalog=BaiTapLonHQT;Integrated Security=True";
+        public static string con = @"Data Source=2131204W\SQLEXPRESS;Initial Catalog=BaiTapLonHQT;Integrated Security=True";
     }
 }

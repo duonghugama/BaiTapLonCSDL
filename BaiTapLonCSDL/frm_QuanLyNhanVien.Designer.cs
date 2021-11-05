@@ -43,10 +43,11 @@ namespace BaiTapLonCSDL
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnTim = new System.Windows.Forms.Button();
+            this.btnXem = new System.Windows.Forms.Button();
             this.txtTim = new System.Windows.Forms.TextBox();
             this.dgvTaikhoan = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTim = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTaikhoan)).BeginInit();
             this.panel1.SuspendLayout();
@@ -61,7 +62,7 @@ namespace BaiTapLonCSDL
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(804, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(869, 35);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -137,18 +138,18 @@ namespace BaiTapLonCSDL
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(152, 50);
+            this.btnSua.Location = new System.Drawing.Point(105, 50);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(136, 52);
+            this.btnSua.Size = new System.Drawing.Size(86, 52);
             this.btnSua.TabIndex = 18;
             this.btnSua.Text = "Sửa ";
             this.btnSua.UseVisualStyleBackColor = true;
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(294, 51);
+            this.btnXoa.Location = new System.Drawing.Point(197, 52);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(130, 50);
+            this.btnXoa.Size = new System.Drawing.Size(99, 50);
             this.btnXoa.TabIndex = 17;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -158,23 +159,24 @@ namespace BaiTapLonCSDL
             // 
             this.btnThem.Location = new System.Drawing.Point(15, 48);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(131, 54);
+            this.btnThem.Size = new System.Drawing.Size(84, 54);
             this.btnThem.TabIndex = 16;
             this.btnThem.Text = "Thêm ";
             this.btnThem.UseVisualStyleBackColor = true;
             // 
-            // btnTim
+            // btnXem
             // 
-            this.btnTim.Location = new System.Drawing.Point(653, 48);
-            this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(139, 52);
-            this.btnTim.TabIndex = 18;
-            this.btnTim.Text = "Tìm";
-            this.btnTim.UseVisualStyleBackColor = true;
+            this.btnXem.Location = new System.Drawing.Point(653, 48);
+            this.btnXem.Name = "btnXem";
+            this.btnXem.Size = new System.Drawing.Size(139, 52);
+            this.btnXem.TabIndex = 18;
+            this.btnXem.Text = "Tim";
+            this.btnXem.UseVisualStyleBackColor = true;
+            this.btnXem.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtTim
             // 
-            this.txtTim.Location = new System.Drawing.Point(459, 62);
+            this.txtTim.Location = new System.Drawing.Point(442, 60);
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(188, 31);
             this.txtTim.TabIndex = 19;
@@ -182,7 +184,7 @@ namespace BaiTapLonCSDL
             // dgvTaikhoan
             // 
             this.dgvTaikhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTaikhoan.Location = new System.Drawing.Point(3, -1);
+            this.dgvTaikhoan.Location = new System.Drawing.Point(3, 3);
             this.dgvTaikhoan.Name = "dgvTaikhoan";
             this.dgvTaikhoan.RowHeadersWidth = 62;
             this.dgvTaikhoan.RowTemplate.Height = 33;
@@ -197,13 +199,24 @@ namespace BaiTapLonCSDL
             this.panel1.Size = new System.Drawing.Size(780, 316);
             this.panel1.TabIndex = 15;
             // 
+            // btnTim
+            // 
+            this.btnTim.Location = new System.Drawing.Point(302, 50);
+            this.btnTim.Name = "btnTim";
+            this.btnTim.Size = new System.Drawing.Size(102, 50);
+            this.btnTim.TabIndex = 20;
+            this.btnTim.Text = "Xem";
+            this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnXem_Click);
+            // 
             // frm_QuanLyNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 453);
-            this.Controls.Add(this.txtTim);
+            this.ClientSize = new System.Drawing.Size(869, 465);
             this.Controls.Add(this.btnTim);
+            this.Controls.Add(this.txtTim);
+            this.Controls.Add(this.btnXem);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
@@ -236,9 +249,10 @@ namespace BaiTapLonCSDL
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnTim;
+        private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.TextBox txtTim;
         private System.Windows.Forms.DataGridView dgvTaikhoan;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnTim;
     }
 }
